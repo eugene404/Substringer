@@ -6,13 +6,25 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp15
 {
-    class Program
+    class Substringer
     {
+        public string nameLimiter(string a)
+        {
+            int l = a.Length;
+
+            string word = a.Substring(1,l-1);
+        
+            return word;
+        }
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
+            Substringer s = new Substringer();
+
+            string name = "Eugene";
+            name.Substring(0);
+            //char[] list = name.ToCharArray();
+
+            Console.WriteLine("nameLimiter method " +  );
             Console.ReadKey();
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
